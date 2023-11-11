@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import { createGlobalStyle } from "styled-components";
-import { Canvas } from "@react-three/fiber";
 import Overlay from "./Overlay.tsx";
 const GolbalStyle = createGlobalStyle`
 
@@ -79,20 +78,7 @@ a {
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GolbalStyle />
-
-    <Canvas
-      dpr={[1, 2]}
-      shadows
-      camera={{
-        fov: 35,
-        near: 1,
-        far: 100,
-        position: [15, 5, 2.7],
-      }}
-    >
-      <App />
-    </Canvas>
-
+    <App />
     <Overlay />
   </React.StrictMode>
 );

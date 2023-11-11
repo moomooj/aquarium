@@ -28,19 +28,19 @@ const Wrap = styled.div`
 `;
 const WorkDate = styled.div`
   position: absolute;
-  bottom: 40px;
-  right: 40px;
+  bottom: 2%;
+  right: 5%;
 `;
 const NameTag = styled.div`
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 2%;
+  left: 5%;
   font-size: 15px;
 `;
 
 const Copyright = styled.div`
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 2%;
+  left: 5%;
   font-size: 15px;
 `;
