@@ -11,7 +11,7 @@ type GLTFResult = GLTF & {
 
 function Porsche() {
   const { scene, nodes, materials } = useGLTF(
-    "/911-transformed.glb"
+    "./911-transformed.glb"
   ) as GLTFResult;
   useLayoutEffect(() => {
     Object.values(nodes).forEach(
@@ -50,5 +50,5 @@ function Porsche() {
     />
   );
 }
-useGLTF.preload("/911-transformed.glb");
+useGLTF.preload("./911-transformed.glb");
 export default Porsche;

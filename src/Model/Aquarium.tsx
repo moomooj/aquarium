@@ -18,7 +18,7 @@ type GLTFResult = GLTF & {
 };
 
 function Aquarium(props: JSX.IntrinsicElements["group"]) {
-  const { nodes } = useGLTF("/shapes-transformed.glb") as GLTFResult;
+  const { nodes } = useGLTF("./shapes-transformed.glb") as GLTFResult;
 
   return (
     <group {...props} dispose={null}>
@@ -48,6 +48,6 @@ function Aquarium(props: JSX.IntrinsicElements["group"]) {
     </group>
   );
 }
-useGLTF.preload("/shapes-transformed.glb");
+useGLTF.preload("./shapes-transformed.glb");
 
 export default Aquarium;
